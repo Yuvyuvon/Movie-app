@@ -386,7 +386,7 @@ async function searchAPIData(endpoint) {
   showSpinner();
 
   const response = await fetch(
-    `${API_URL}search/${global.search.type}?api_key=${API_KEY}&language=en-US&query=${golbal.search.term}`
+    `${API_URL}search/${global.search.type}?api_key=${API_KEY}&language=en-US&query=${global.search.term}`
   );
 
   const data = await response.json();
@@ -419,7 +419,7 @@ function showAlert(massage, className) {
   const alertEl = document.createElement('div');
   alertEl.classList.add('alert', className);
   alertEl.appendChild(document.createTextNode(massage));
-  document.querySelector('#alert').appendChild(alert);
+  document.querySelector('#alert').appendChild(alertEl);
 
   setTimeout(() => alertEl.remove(), 3000);
 }
