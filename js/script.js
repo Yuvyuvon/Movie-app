@@ -288,7 +288,7 @@ function initSwiper() {
 async function fetchAPIData(endpoint) {
   // Register your key at https://www.themoviedb.org/settings/api and enter here
   // Only use this for development or very small projects. You should store your key and make requests from a server
-  const API_KEY = '';
+  const API_KEY = '46b66f9c960755976700da2fe25852ba';
   const API_URL = 'https://api.themoviedb.org/3/';
 
   showSpinner();
